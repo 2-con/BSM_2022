@@ -1,0 +1,430 @@
+<!DOCTYPE Html>
+<html>
+	<head>
+		<style>
+
+			h1{
+				font-size:50px;
+				font-family: Arial, Helvetica, sans-serif;
+				text-align: center;
+			}
+
+			h2{
+				font-size:50px;
+				font-family: Arial, Helvetica, sans-serif;
+				text-align: center;
+			}
+
+			p {
+				font-size:  20px;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+
+			p2 {
+				font-size:  20px;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+
+			img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			div.center {
+				text-align: center;
+	
+			}
+
+			div.left {
+				text-align: left;
+
+			}
+
+			div.right {
+				text-align: right;
+
+			}
+
+			div.justify {
+				text-align: justify;
+
+			}
+			
+			ul.circle {
+				list-style-type: circle;
+			}
+
+			ul.square {
+				list-style-type: square;
+			}
+
+			ol.roman {
+				list-style-type: upper-roman;
+			}
+
+			ol.alphabet {
+				list-style-type: lower-alpha;
+			}
+
+			ul.number {
+				list-style-type: number;
+			}
+			
+			div.gallery {
+				margin: 5px;
+				border: 1px solid #ccc;
+				float: left;
+				width: 70%;
+				
+			}
+
+			div.gallery:hover {
+				border: 5px solid #777;
+			}
+
+			div.gallery img {
+				width: 70%;
+				height: auto;
+			}
+
+			div.desc {
+				padding: 15px;
+				text-align: center;
+			}
+
+			.coral_button {
+ 				background-color: coral;
+ 				border: none;
+  				color: white;
+  				padding: 25px 20px;
+				text-align: center;
+				text-decoration: none;
+ 				display: inline-block;
+  				font-size: 20px;
+  				margin: 4px 2px;
+  				cursor: pointer;
+				border-radius: 9px;
+			}
+			
+			.big_button3 {
+ 				background-color: #009dff;
+ 				border: none;
+  				color: white;
+  				padding: 25px 55px;
+				text-align: center;
+				text-decoration: none;
+ 				display: inline-block;
+  				font-size: 20px;
+  				margin: 4px 2px;
+  				cursor: pointer;
+				transition-duration: 0.3s;
+				border-radius: 9px;
+			}
+
+			.big_button4 {
+				background-color: #009dff;
+				color: white;
+				border-radius: 9px;
+			}
+
+
+			.big_button {
+ 				background-color: coral;
+ 				border: none;
+  				color: white;
+  				padding: 25px 20px;
+				text-align: center;
+				text-decoration: none;
+ 				display: inline-block;
+  				font-size: 20px;
+  				margin: 4px 2px;
+  				cursor: pointer;
+				border-radius: 9px;
+			}
+
+			.big_button1 {
+ 				background-color:#e02f2f;
+ 				border: none;
+  				color: white;
+  				padding: 25px 20px;
+				text-align: center;
+				text-decoration: none;
+ 				display: inline-block;
+  				font-size: 20px;
+  				margin: 4px 2px;
+  				cursor: pointer;
+				border-radius: 9px;
+			}
+
+			.big_button3:hover {
+				background-color: #03ad00;
+				color: white;
+			}
+
+			ul {
+				position: -webkit-sticky;
+  				position: sticky;
+  				top: 0;
+  				list-style-type: none;
+  				margin: 0;
+  				padding: 0;
+  				overflow: hidden;
+  				background-color: #303030;
+				border-radius: 15px;
+			}
+
+			li {
+  				float: left;
+				border-right:1px solid #ffffff;
+			}
+
+			li:last-child {
+  				border-right: none;
+			}
+
+			li a {
+  				display: block;
+  				color: white;
+  				text-align: center;
+  				padding: 14px 16px;
+  				text-decoration: none;
+			}
+
+			li a:hover:not(.active) {
+  				background-color: #525252;
+			}
+
+			.active {
+  				background-color: #333333;
+			}
+			.header {
+  				background-color: #f1f1f1;
+  				padding: 20px;
+ 				text-align: center;
+			}
+
+			.card {
+  				background-color: white;
+  				padding: 20px;
+  				margin-top: 20px;
+				margin: 20px;
+				border-radius: 9px;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+
+			.image_card {
+  				background-color: white;
+  				padding: 20px;
+  				margin-top: 10px;
+				margin: 100px;
+				border-radius: 9px;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+
+			.footer {
+  				background-color: #f1f1f1;
+  				padding: 10px;
+  				text-align: center;
+			}
+
+			.tooltip {
+ 				 position: relative;
+ 				 display: inline-block;
+ 				 border-bottom: 1px dotted black;
+			}
+
+			.tooltip .tooltiptext {
+  				visibility: hidden;
+  				width: 120px;
+				background-color: black;
+  				color: #fff;
+  				text-align: center;
+				border-radius: 6px;
+  				padding: 5px 0;
+  
+  			position: absolute;
+  				z-index: 1;
+  				top: 100%;
+  				left: 50%;
+  				margin-left: -60px;
+			}
+
+			.tooltip:hover .tooltiptext {
+  				visibility: visible;
+			}
+
+			.active {
+  				background-color: #04AA6D;
+			}
+
+			* {
+				box-sizing: border-box;
+			}
+
+			.row {
+				float: left;
+				width: 30.3333333333333333333333%;
+				padding: 5px;
+			}
+
+			div.gallery {
+				margin: 5px;
+				border: 1px solid #ccc;
+				float: left;
+				width: 70%;
+				
+			}
+
+			div.gallery:hover {
+				border: 5px solid #777;
+			}
+
+			div.gallery img {
+				width: 70%;
+				height: auto;
+			}
+
+			div.desc {
+				padding: 15px;
+				text-align: center;
+			}
+			
+			div.gallery {
+  				margin: 5px;
+ 				border: 1px solid #ccc;
+  				float: both;
+  				width: 250px;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+				border-radius: 9px;
+			}
+
+			div.gallery:hover {
+  				border: 1px solid black;
+			}
+
+			div.gallery img {
+  				width: 100%;
+  				height: auto;
+				border-radius: 9px;
+			}
+
+			div.desc {
+  				padding: 15px;
+  				text-align: center;
+  				background-color: #333333;
+  				color : #ffffff;
+				border-radius: 9px;
+			}
+
+			.modal {
+  				display: none; 
+ 				 position: fixed; 
+ 				 z-index: 1; 
+ 				 padding-top: 100px; 
+ 				 left: 0;
+ 				 top: 0;
+ 				 width: 100%; 
+ 				 height: 100%; 
+ 				 overflow: auto; 
+				 border-radius: 9px;
+ 				 background-color: rgb(0,0,0); 
+ 				 background-color: rgba(0,0,0,0.5); 
+			}
+
+			.modal-stuff {
+ 			 position: relative;
+			  background-color: #fefefe;
+			  margin: auto;
+			  padding: 0;
+			  border: 1px solid #888;
+			  width: 80%;
+			  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+			  animation-name: animatetop;
+			  animation-duration: 0.4s;
+ 			  animation-name: animatetop;
+			  animation-duration: 0.4s
+			}
+
+			@-webkit-keyframes animatetop {
+ 			 from {top:-300px; opacity:0} 
+ 			 to {top:0; opacity:1}
+			}
+
+			@keyframes animatetop {
+ 			 from {top:-300px; opacity:0}
+ 			 to {top:0; opacity:1}
+			}
+
+			.close {
+ 			 color: white;
+  			float: right;
+  			font-size: 28px;
+  			font-weight: bold;
+			}
+
+			.close:hover,
+			.close:focus {
+  			  color: #000;
+			  text-decoration: none;
+			  cursor: pointer;
+			}
+
+			.modal-title {
+			  padding: 2px 16px;
+			  background-color: #333333;
+			  color: white;
+			  border-radius: 15px;
+			}
+
+			.modal-text {padding: 2px 16px;}
+
+			.modal-footer {
+			  padding: 2px 16px;
+			  background-color: #333333;
+			  color: white;
+			  border-radius: 15px;
+			}
+
+			.float-left{
+				float: left;
+			}
+
+			.float-right{
+				float: right;
+			}
+
+			.float-center{
+				float: center;
+			}
+
+		</style>
+
+		<title> voting poll </title>
+
+		</head>
+
+			<body bgcolor="#ededed">
+
+			<div class="header"> <h1> welcome to imagegallery.net! </h1> 
+					<p1> the world's no.1 gallery website </p> </div>
+					
+				<ul>
+				<li><a href="file:///C:/Users/User/OneDrive/Desktop/coding%20thing/index.html">home</a></li>					
+  				<li><a href="file:///C:/Users/User/OneDrive/Desktop/coding%20thing/images.html">image gallery</a></li>
+				<li><a href="file:///C:/Users/User/OneDrive/Desktop/coding%20thing/video.html">video gallery</a></li>
+				<li><a href="mailto:mulyadia@britishschoolmuscat.com">submit image</a></li>
+				<li style="float:right"><a class="active" href="file:///C:/Users/User/OneDrive/Desktop/coding%20thing/page5.html">about us</a></li>
+				<li><a href="file:///C:/Users/User/OneDrive/Desktop/coding%20thing/news.html"> news </a></li>
+				</ul>
+
+				<p>vote your favorite image to be on the image or the month!</p>
+				
+				
+
+				<p>last poll results</p>
+
+	</body>
+
+</html>
+ 

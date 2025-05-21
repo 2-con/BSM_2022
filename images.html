@@ -1,0 +1,539 @@
+<!DOCTYPE Html>
+<html>
+	<head>
+		<style>
+
+			h1{
+
+				font-size:50px;
+			}
+
+			h1{
+
+				font-family: Arial, Helvetica, sans-serif;
+
+			}
+
+			h2{
+
+			font-family: Arial, Helvetica, sans-serif;
+
+			}
+
+			h3{
+
+				font-family: Arial, Helvetica, sans-serif;
+
+			}
+
+			h4{
+
+				font-family: Arial, Helvetica, sans-serif;
+
+			}
+
+			h5{
+
+				font-family: Arial, Helvetica, sans-serif;
+
+			}
+
+			h6{
+
+				font-family: Arial, Helvetica, sans-serif;
+
+			}
+
+			p{
+
+				font-size:  20px;
+
+			}
+
+			p{
+
+				font-family: Arial, Helvetica, sans-serif;
+
+			}
+
+			img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			div.center {
+				text-align: center;
+	
+			}
+
+			div.left {
+				text-align: left;
+
+			}
+
+			div.right {
+				text-align: right;
+
+			}
+
+			div.justify {
+				text-align: justify;
+
+			}
+			
+			ul.circle {
+				list-style-type: circle;
+			}
+
+			ul.square {
+				list-style-type: square;
+			}
+
+			ol.roman {
+				list-style-type: upper-roman;
+			}
+
+			ol.alphabet {
+				list-style-type: lower-alpha;
+			}
+
+			ul.number {
+				list-style-type: number;
+			}
+
+			div.pad {
+				margin: 40px;
+				padding: 1%;
+				background-color: #FF8330;
+				border: 3px solid black;
+			}
+			
+			div.gallery {
+				margin: 5px;
+				border: 1px solid #ccc;
+				float: left;
+				width: 70%;
+				
+			}
+
+			div.gallery:hover {
+				border: 5px solid #777;
+			}
+
+			div.gallery img {
+				width: 70%;
+				height: auto;
+			}
+
+			div.desc {
+				padding: 15px;
+				text-align: center;
+			}
+			
+			div.gallery {
+  				margin: 5px;
+ 				border: 1px solid #ccc;
+  				float: both;
+  				width: 250px;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+				border-radius: 9px;
+			}
+
+			div.gallery:hover {
+  				border: 1px solid black;
+			}
+
+			div.gallery img {
+  				width: 100%;
+  				height: auto;
+				border-radius: 9px;
+			}
+
+			div.desc {
+  				padding: 15px;
+  				text-align: center;
+  				background-color: #333333;
+  				color : #ffffff;
+				border-radius: 9px;
+			}
+
+			ul {
+				position: webkit-sticky;
+  				position: sticky;
+  				top: 0;
+  				list-style-type: none;
+  				margin: 0;
+  				padding: 0;
+  				overflow: hidden;
+  				background-color: #303030;
+				border-radius: 15px;
+			}
+
+			li {
+  				float: left;
+				border-right:1px solid #ffffff;
+			}
+
+			li:last-child {
+  				border-right: none;
+			}
+
+			li a {
+  				display: block;
+  				color: white;
+  				text-align: center;
+  				padding: 14px 16px;
+  				text-decoration: none;
+			}
+
+			li a:hover:not(.active) {
+  				background-color: #525252;
+			}
+
+			.active {
+  				background-color: #333333;
+			}
+			.header {
+  				background-color: #f1f1f1;
+  				padding: 20px;
+ 				text-align: center;
+			}
+
+			.card {
+  				background-color: #919191;
+  				padding: 5px;
+  				margin-top: 20px;
+				margin: 10px;
+				border-radius: 14px;
+			}
+
+			.card1 {
+  				background-color: white;
+  				padding: 20px;
+  				margin-top: 20px;
+				margin: 30px;
+				border-radius: 9px;
+			}
+
+			.footer {
+  				background-color: #f1f1f1;
+  				padding: 10px;
+  				text-align: center;
+			}
+
+			.tooltip {
+ 				 position: relative;
+ 				 display: inline-block;
+ 				 border-bottom: 1px dotted black;
+			}
+
+			.tooltip .tooltiptext {
+  				visibility: hidden;
+  				width: 120px;
+				background-color: black;
+  				color: #fff;
+  				text-align: center;
+				border-radius: 6px;
+  				padding: 5px 0;
+  
+  			position: absolute;
+  				z-index: 1;
+  				top: 100%;
+  				left: 50%;
+  				margin-left: -60px;
+			}
+
+			.tooltip:hover .tooltiptext {
+  				visibility: visible;
+			}
+
+			.active {
+  				background-color: #04AA6D;
+			}
+
+			.big_button {
+ 				background-color: coral;
+ 				border: none;
+  				color: white;
+  				padding: 25px 20px;
+				text-align: center;
+				text-decoration: none;
+ 				display: inline-block;
+  				font-size: 20px;
+  				margin: 4px 2px;
+  				cursor: pointer;
+				border-radius: 9px;
+			}
+
+			.big_button1 {
+ 				background-color:#e02f2f;
+ 				border: none;
+  				color: white;
+  				padding: 25px 20px;
+				text-align: center;
+				text-decoration: none;
+ 				display: inline-block;
+  				font-size: 20px;
+  				margin: 4px 2px;
+  				cursor: pointer;
+				border-radius: 9px;
+			}
+
+		</style>
+
+		<title> image gallery</title>
+
+		</head>	
+
+ 
+
+			<body bgcolor="#cccccc">
+			
+				<div class="header"> <h1> image gallery </h1>
+					<p1> worlds no.1 gallery website </p1> </div>
+
+			<ul>
+  				<li><a href="file:///C:/Users/User/OneDrive/Desktop/coding%20thing/index.html">Home</a></li>
+				  <li><a href="file:///C:/Users/User/OneDrive/Desktop/coding%20thing/video.html"> video gallery </a></li>
+ 				<li><a href="mailto:mulyadia@britishschoolmuscat.com">submit image</a></li>
+				 <li style="float:right"><a class="active" href="file:///C:/Users/User/OneDrive/Desktop/coding%20thing/page5.html">about us</a></li>
+				 <li><a href="file:///C:/Users/User/OneDrive/Desktop/coding%20thing/news.html"> news </a></li>
+			</ul>
+
+			<div class="center">
+				<a href="file:///C:/Users/User/OneDrive/Desktop/coding%20thing/page3.html"><button class="big_button"> outer space </button></a>
+				<a href="file:///C:/Users/User/OneDrive/Desktop/coding%20thing/weirdcore.html"><button class="big_button1"> weirdcore </button></a>
+			</div>
+ 
+			<div class="card1">
+				<div class="center">
+					<h2> random gallery </h2><br>
+					<p5> just some top images, nothing much. </p5><br>
+					<p6> for thoose who are new, the random gallery is just the top images/most images clicked, 
+						apart from that nothing here all have the same context behind it so enjoy i guess :) </p6>
+				</div>
+			</div>
+			
+		<div class="card1">
+			<div class="center">
+				<div class="card">
+					<h1> most popular images </h1>
+				</div>
+			</div>
+				<div class="center">
+			<div class="gallery">
+				<a target="_blank" href="image.jfif">
+				<img src="image.jfif" alt="saul" width="100" height="100">
+				</a>
+				<div class="desc"> why is he staring into my soul </div>
+			</div>
+			
+			<div class="gallery">
+  				<a target="_blank" href="low-patrik.jpg">
+    				<img src="low-patrik.jpg" alt="yo" width="100"height="100">
+  				</a>
+  				<div class="desc"> mc donalds internet moment</div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="dang.jpg">
+    				<img src="dang.jpg" alt="drip" width="100"height="100">
+  				</a>
+  				<div class="desc"> daaaaaaaaaaaaang man got drip </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="notch.jpg">
+    				<img src="notch.jpg" alt=" minecraft " width="100"height="100">
+  				</a>
+  				<div class="desc"> kinda sad microsoft owns minecraft </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="hallway.jpg">
+    				<img src="hallway.jpg" alt=" sceary " width="100"height="100">
+  				</a>
+  				<div class="desc"> kinda sceary for me, your opinion? </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="quack.jpg">
+    				<img src="quack.jpg" alt=" duck " width="100"height="100">
+  				</a> 
+  				<div class="desc"> i dont know what to put here lol </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="w-core.png">
+    				<img src="w-core.png" alt=" weird-core " width="100"height="100">
+  				</a>
+  				<div class="desc"> dreamcore saturday <br> #38 </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="no-way.jpg">
+    				<img src="no-way.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> my guy <br> this cant be real </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="thor.jpg">
+    				<img src="thor.jpg" alt=" hammer " width="100"height="100">
+  				</a>
+  				<div class="desc"> no text <br> available </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="kermit.jpg">
+    				<img src="kermit.jpg" alt=" wsedrftgy " width="100"height="100">
+  				</a>
+  				<div class="desc"> that moment of realization <br> tho </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="water.jpg">
+    				<img src="water.jpg" alt=" tap " width="100"height="100">
+  				</a>
+  				<div class="desc"> tap on the screen <br> (legit no scam) </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="bro-fr.jpg">
+    				<img src="bro-fr.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> bro what's happening in oklahoma fr fr </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="yt.jpg">
+    				<img src="yt.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> youtube at 3 am <br> be like </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="history.jpg">
+    				<img src="history.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> history channel at 4 am <br> be like </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="cat.jpeg">
+    				<img src="cat.jpeg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> the cat wondering why i wanted to invade cuba </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="taco.jpg">
+    				<img src="taco.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> man's living in <br> 69,420 </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="chuky.jpg">
+    				<img src="chuky.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> no text <br> available </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="cat2.jpg">
+    				<img src="cat2.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> that one karen at mc donalds be like </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="star.jpg">
+    				<img src="star.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> say whaaaaaaaat <br> now </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="chad.jpg">
+    				<img src="chad.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> chads <br> nothing more, nothing less </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="bord.jpg">
+    				<img src="bord.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> literally every 90's rap song <br> ngl </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="cat3.jpg">
+    				<img src="cat3.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> no text <br> available </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="fridge.jpg">
+    				<img src="fridge.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> granma's fridge <br> looki'n good </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="what.jpg">
+    				<img src="what.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> how is a blackhole<br>lab grown </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="wow.jpg">
+    				<img src="wow.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc">roundest ball ever, its just some atoms out of round </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="cursor.jpg">
+    				<img src="cursor.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> is the pointer the most famous thing ever? </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="earth.jpg">
+    				<img src="earth.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> flat earthers when <br> - </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="yes.jpg">
+    				<img src="yes.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> me and da bois on our way to go to jimmy's b-day </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="shoes.jpg">
+    				<img src="shoes.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> its called fasion... <br> dangerous fasion </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="wb.jpg">
+    				<img src="wb.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> goofy ahh <br> landing </div>
+			</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>

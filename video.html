@@ -1,0 +1,333 @@
+<!DOCTYPE Html>
+<html>
+	<head>
+		<style>
+
+			h1{
+
+				font-size:50px;
+			}
+
+			h1{
+
+				font-family: Arial, Helvetica, sans-serif;
+
+			}
+
+			p1{
+
+				font-size:  20px;
+
+			}
+
+			p1{
+
+				font-family: Arial, Helvetica, sans-serif;
+
+			}
+
+			img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			div.center_nopad {
+				text-align: center;
+	
+			}
+
+			div.left_nopad {
+				text-align: left;
+
+			}
+
+			div.right_nopad {
+				text-align: right;
+
+			}
+
+			div.justify_nopad {
+				text-align: justify;
+
+			}
+			
+			ul.circle {
+				list-style-type: circle;
+			}
+
+			ul.square {
+				list-style-type: square;
+			}
+
+			ol.roman {
+				list-style-type: upper-roman;
+			}
+
+			ol.alphabet {
+				list-style-type: lower-alpha;
+			}
+
+			ul.number {
+				list-style-type: number;
+			}
+
+			div.pad {
+				margin: 40px;
+				padding: 1%;
+				background-color: #FF8330;
+				border: 3px solid black;
+			}
+			
+			div.gallery {
+				margin: 5px;
+				border: 1px solid #ccc;
+				float: left;
+				width: 70%;
+				
+			}
+
+			div.gallery:hover {
+				border: 5px solid #777;
+			}
+
+			div.gallery img {
+				width: 70%;
+				height: auto;
+			}
+
+			div.desc {
+				padding: 15px;
+				text-align: center;
+			}
+
+			.button {
+ 				background-color: #4CAF50;
+ 				border: none;
+  				color: white;
+  				padding: 5px 15px;
+				text-align: center;
+				text-decoration: none;
+ 				display: inline-block;
+  				font-size: 16px;
+  				margin: 4px 2px;
+  				cursor: pointer;
+			}
+			
+		.big_button {
+ 				background-color: coral;
+ 				border: none;
+  				color: white;
+  				padding: 25px 20px;
+				text-align: center;
+				text-decoration: none;
+ 				display: inline-block;
+  				font-size: 20px;
+  				margin: 4px 2px;
+  				cursor: pointer;
+				border-radius: 9px;
+			}
+
+			div.gallery {
+  				margin: 5px;
+ 				border: 1px solid #ccc;
+  				float: left;
+  				width: 250px;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+				border-radius: 9px;
+			}
+
+			div.gallery:hover {
+  				border: 1px solid black;
+			}
+
+			iframe {
+  				width: 250px;
+  				height: 200px;
+				border-radius: 9px;
+			}
+
+			div.desc {
+  				padding: 15px;
+  				text-align: center;
+  				background-color: #333333;
+  				color : #ffffff;
+				border-radius: 9px;
+			}
+
+			ul {
+				position: -webkit-sticky;
+  				position: sticky;
+  				top: 0;
+  				list-style-type: none;
+  				margin: 0;
+  				padding: 0;
+  				overflow: hidden;
+  				background-color: #303030;
+				border-radius: 15px;
+			}
+
+			li {
+  				float: left;
+				border-right:1px solid #ffffff;
+			}
+
+			li:last-child {
+  				border-right: none;
+			}
+
+			li a {
+  				display: block;
+  				color: white;
+  				text-align: center;
+  				padding: 14px 16px;
+  				text-decoration: none;
+			}
+
+			li a:hover:not(.active) {
+  				background-color: #525252;
+			}
+
+			.active {
+  				background-color: #333333;
+			}
+			.header {
+  				background-color: #f1f1f1;
+  				padding: 20px;
+ 				text-align: center;
+			}
+
+			.card {
+  				background-color: #919191;
+  				padding: 5px;
+  				margin-top: 20px;
+				margin: 10px;
+				border-radius: 14px;
+			}
+
+			.card1 {
+  				background-color: white;
+  				padding: 20px;
+  				margin-top: 20px;
+				margin: 30px;
+				border-radius: 9px;
+			}
+
+			.tooltip {
+ 				 position: relative;
+ 				 display: inline-block;
+ 				 border-bottom: 1px dotted black;
+			}
+
+			.tooltip .tooltiptext {
+  				visibility: hidden;
+  				width: 120px;
+				background-color: black;
+  				color: #fff;
+  				text-align: center;
+				border-radius: 6px;
+  				padding: 5px 0;
+  
+  			position: absolute;
+  				z-index: 1;
+  				top: 100%;
+  				left: 50%;
+  				margin-left: -60px;
+			}
+
+			.tooltip:hover .tooltiptext {
+  				visibility: visible;
+			}
+
+			.active {
+  				background-color: #04AA6D;
+			}
+		</style>
+
+		<title> video gallery </title>
+
+		</head>	
+
+ 
+
+			<body bgcolor="#cccccc">
+			
+				<div class="header"> <h1> video gallery </h1>
+					<p1> worlds no.1 gallery website </p1> </div>
+
+			<ul>
+  				<li><a href="file:///C:/Users/User/OneDrive/Desktop/coding%20thing/index.html">Home</a></li>
+ 				<li><a href="file:///C:/Users/User/OneDrive/Desktop/coding%20thing/images.html"> image gallery</a></li>
+				<li><a href="mailto:mulyadia@britishschoolmuscat.com">submit image</a></li>
+				<li style="float:right"><a class="active" href="file:///C:/Users/User/OneDrive/Desktop/coding%20thing/page5.html">about us</a></li>
+				<li><a href="file:///C:/Users/User/OneDrive/Desktop/coding%20thing/news.html"> news </a></li>
+			</ul>
+
+			<div class="card1">
+				<div class="center">
+					<h2> video gallery-random </h2><br>
+					<p5> this gallery is the random collection of videos that are mased on wich one is most replayed  </p5><br>
+					<p6> this section allows to watch videos, videos are played by youtube.</p6>
+				</div>
+			</div>
+			
+			<div class="card1">
+				<div class="center">
+					<div class="card">
+						<h1> most popular images </h1>
+					</div>
+				</div>
+				<div class="gallery">
+					<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="100%" height="100%" type="text/html" src="https://www.youtube.com/embed/IYN9Ilm-IbM?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"></iframe>
+				  <div class="desc">maca b <br> cucumba to di world </div>
+				</div>
+
+				<div class="gallery">
+					<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="100%" height="100%" type="text/html" src="https://www.youtube.com/embed/0Eh91CCqXjo?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"></iframe>
+					  <div class="desc"> cursed mcdonalds<br> ripoff </div>
+					</div>
+
+				<div class="gallery">
+					<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="100%" height="100%" type="text/html" src="https://www.youtube.com/embed/DBXH9jJRaDk?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"><div><small><a href="https://youtubeembedcode.com/es/">youtubeembedcode.com/es/</a></small></div><div><small><a href="https://mgacasinoutansvensklicens.se/">malta casino utan svensk licens</a></small></div></iframe>
+					  <div class="desc">boat canal <br> crossing </div>
+					</div>
+
+				<div class="gallery">
+					<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="100%" height="100%" type="text/html" src="https://www.youtube.com/embed/BeJqgI6rw9k?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"></iframe>
+						  <div class="desc">some houses in your area are not real</div>
+					</div>
+		
+				<div class="gallery">
+					<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="100%" height="100%" type="text/html" src="https://www.youtube.com/embed/5mnbYTb49_8?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"></iframe>
+						  <div class="desc">42 secret minecraft easter eggs</div>
+					</div>
+		
+				<div class="gallery">
+					<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="100%" height="100%" type="text/html" src="https://www.youtube.com/embed/el2eRPwREJE?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"></iframe>
+							  <div class="desc">where in the earth do you weigh the least</div>
+							</div>
+		
+					<div class="gallery">
+						<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="100%" height="100%" type="text/html" src="https://www.youtube.com/embed/CwQQCwFcjoQ?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"></iframe>
+					  <div class="desc">bad piggies theme song but its a phonk remix</div>
+					</div>
+
+					<div class="gallery">
+						<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="100%" height="100%" type="text/html" src="https://www.youtube.com/embed/z-wZHx8WILk?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"></iframe>
+						  <div class="desc">why the uk's economy is collapsing </div>
+						</div>
+	
+					<div class="gallery">
+						<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="100%" height="100%" type="text/html" src="https://www.youtube.com/embed/_dLmHF4lXs0?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"></iframe>
+						<div class="desc">cursed comments from the internet</div>
+					</div>
+					<div class="gallery">
+						<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="100%" height="100%" type="text/html" src="https://www.youtube.com/embed/rEnf_CFoyv0?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"></iframe>
+						<div class="desc">inequality is getting closer <br> -ted ed</div>
+					</div>
+		</div>
+
+	</body>
+
+</html>
+ 

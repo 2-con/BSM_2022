@@ -1,0 +1,342 @@
+<!DOCTYPE Html>
+<html>
+	<head>
+		<style>
+
+			h1{
+
+				font-size:50px;
+			}
+
+			h1{
+
+				font-family: Arial, Helvetica, sans-serif;
+
+			}
+
+			p1{
+
+				font-size:  20px;
+
+			}
+
+			p1{
+
+				font-family: Arial, Helvetica, sans-serif;
+
+			}
+
+			img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			div.center {
+				text-align: center;
+	
+			}
+
+			div.left {
+				text-align: left;
+
+			}
+
+			div.right {
+				text-align: right;
+
+			}
+
+			div.justify {
+				text-align: justify;
+
+			}
+			
+			ul.circle {
+				list-style-type: circle;
+			}
+
+			ul.square {
+				list-style-type: square;
+			}
+
+			ol.roman {
+				list-style-type: upper-roman;
+			}
+
+			ol.alphabet {
+				list-style-type: lower-alpha;
+			}
+
+			ul.number {
+				list-style-type: number;
+			}
+
+			div.pad {
+				margin: 40px;
+				padding: 1%;
+				background-color: #FF8330;
+				border: 3px solid black;
+			}
+			
+			div.gallery {
+				margin: 5px;
+				border: 1px solid #ccc;
+				float: left;
+				width: 70%;
+				
+			}
+
+			div.gallery:hover {
+				border: 5px solid #777;
+			}
+
+			div.gallery img {
+				width: 70%;
+				height: auto;
+			}
+
+			div.desc {
+				padding: 15px;
+				text-align: center;
+			}
+
+			.button {
+ 				background-color: #4CAF50;
+ 				border: none;
+  				color: white;
+  				padding: 5px 15px;
+				text-align: center;
+				text-decoration: none;
+ 				display: inline-block;
+  				font-size: 16px;
+  				margin: 4px 2px;
+  				cursor: pointer;
+			}
+			
+			.big_button {
+ 				background-color: #009dff;
+ 				border: none;
+  				color: white;
+  				padding: 25px 55px;
+				text-align: center;
+				text-decoration: none;
+ 				display: inline-block;
+  				font-size: 20px;
+  				margin: 4px 2px;
+  				cursor: pointer;
+				transition-duration: 0.3s;
+				border-radius: 9px;
+			}
+
+			div.gallery {
+  				margin: 5px;
+ 				border: 1px solid #ccc;
+  				float: left;
+  				width: 250px;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+				border-radius: 9px;
+			}
+
+			div.gallery:hover {
+  				border: 1px solid black;
+			}
+
+			iframe {
+  				width: 250px;
+  				height: 200px;
+				border-radius: 9px;
+			}
+
+			div.desc {
+  				padding: 15px;
+  				text-align: center;
+  				background-color: #333333;
+  				color : #ffffff;
+				border-radius: 9px;
+			}
+
+			ul {
+				position: -webkit-sticky;
+  				position: sticky;
+  				top: 0;
+  				list-style-type: none;
+  				margin: 0;
+  				padding: 0;
+  				overflow: hidden;
+  				background-color: #303030;
+				border-radius: 15px;
+			}
+
+			li {
+  				float: left;
+				border-right:1px solid #ffffff;
+			}
+
+			li:last-child {
+  				border-right: none;
+			}
+
+			li a {
+  				display: block;
+  				color: white;
+  				text-align: center;
+  				padding: 14px 16px;
+  				text-decoration: none;
+			}
+
+			li a:hover:not(.active) {
+  				background-color: #525252;
+			}
+
+			.active {
+  				background-color: #333333;
+			}
+			.header {
+  				background-color: #f1f1f1;
+  				padding: 20px;
+ 				text-align: center;
+			}
+
+			.card {
+  				background-color: white;
+  				padding: 20px;
+  				margin-top: 20px;
+				margin: 70px;
+				border-radius: 9px;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+
+			.card1 {
+  				background-color: white;
+  				padding: 20px;
+  				margin-top: 20px;
+				margin: 30px;
+				border-radius: 9px;
+			}
+
+			.tooltip {
+ 				 position: relative;
+ 				 display: inline-block;
+ 				 border-bottom: 1px dotted black;
+			}
+
+			.tooltip .tooltiptext {
+  				visibility: hidden;
+  				width: 120px;
+				background-color: black;
+  				color: #fff;
+  				text-align: center;
+				border-radius: 6px;
+  				padding: 5px 0;
+  
+  			position: absolute;
+  				z-index: 1;
+  				top: 100%;
+  				left: 50%;
+  				margin-left: -60px;
+			}
+
+			.tooltip:hover .tooltiptext {
+  				visibility: visible;
+			}
+
+			.active {
+  				background-color: #04AA6D;
+			}
+
+		</style>
+
+		<title> news </title>
+
+		</head>	
+
+ 
+
+			<body bgcolor="#ededed">
+			
+				<div class="header"> <h1> NEWS </h1>
+					<p1> worlds no.1 gallery website </p1> </div>
+
+			<ul>
+  				<li><a href="file:///C:/Users/User/OneDrive/Desktop/coding%20thing/index.html">Home</a></li>
+				  <li><a href="file:///C:/Users/User/OneDrive/Desktop/coding%20thing/video.html"> video gallery </a></li>
+ 				<li><a href="file:///C:/Users/User/OneDrive/Desktop/coding%20thing/images.html"> image gallery</a></li>
+				<li><a href="mailto:mulyadia@britishschoolmuscat.com">submit image</a></li>
+				<li style="float:right"><a class="active" href="file:///C:/Users/User/OneDrive/Desktop/coding%20thing/page5.html">about us</a></li>
+			</ul>
+
+			<div class="card">
+				<h2>Google chrome is going to abseloutely destroy adblockers</h2>
+				<h5>ad blockers are gonna die by 2023 - 19/10/2022</h5>
+				<img src="goog.jpg" style="height:500px;width:600px;">
+				<p>sorry if im late to this google-chrome shenanigans.</p>
+				<p>bassically google chrome is making a new thing that makes ad blockers die and in the process, claims that its 'for our safety' but really 
+					its about killing adblockers. and for those who didnt use adblock, its a neat thing that makes ad dissapears and is really neat and stuff but chrome dont likes it.
+					since chrome makes money off ads its clear that chrome just wants to destroy ads and you mak notice that youtube now may be showing up to 5 ads and thats because
+					that most gen-z uses a extension where it blocks ads and to compensate for that, thay are showing more ads wich in turn makes people download ad-blockers. so for anyone seeing this, use firefox since
+					it dosen't use chromium.
+				</p>				
+			</div>
+
+			<div class="card">
+				<h2>empty-ness with the homepage and the about us page</h2>
+				<h5>little to no updates recently - 16/10/2022</h5>
+				<img src="abt-us.jpg" style="height:500px;width:900px;">
+				<p>the homepage and the about us page are getting little to no updates</p>
+				<p>although the homepage is the oldest page,its still dry in terms of updates occationally adding things here and there but ultimately are just baron of anything,
+					on the other hand though, the 'about us' page is probably the most overlooked and overshadowed part since its 
+					legitimately a copy-and-paste from the homepage and man do i feel very lazy after that.
+				</p>				
+			</div>
+
+			<div class="card">
+				<h2>epic error</h2>
+				<h5>epic error with the voting system - 14/10/2022</h5>
+				<img src="peppa.jpg" style="height:500px;width:600px;">
+				<p>the new voting system error</p>
+				<p>recently i experimented with a new voting system wich you guys can vote for the contender for the image of the month,
+					and a epic bug occured where peppa pig recived 2 billion votes and its abselutely insane.
+					appearently the computer just misplaced some decimal and some other thing called "floating point presision error" wich 
+					is complicated but does funny stuff(s) the voting system is still being worked on so only me can see the bug and the debug processes
+				</p>				
+			</div>
+
+			<div class="card">
+				<h2>dam this image slaps hard</h2>
+				<h5>this image slaps hard to the core - 10/10/2022</h5>
+				<img src="th-1.jpg" style="height:500px;width:600px;">
+				<p>this image slaps hard to the core</p>
+				<p>this image from badlandschugs recreating the gta scene kinda feels nostalgic in some way or another
+					and in some way is a relic from the internet. all i gotta say is that since badlandschugs is already iconic, adding some
+					gta in it maks it more memorable and even more iconic.
+				</p>				
+			</div>
+
+			<div class="card">
+				<h2>so otters are taking over...</h2>
+				<h5>people are actively reuploading this spesific image - 7/10/2022</h5>
+				<img src="pls.jpg" style="height:500px;width:600px;">
+				<p>everyone are reuploading this image of otters recently</p>
+				<p>many of you might know that a lot of people are reuploading this image over and over again and just wants everyone to see it, sure they look cute and all but
+				to be fair i get it why people are reuploading this but its clogging up my e-mail so maybe when i have a database you guys can upload 
+				your image(s) directly
+				</p>				
+			</div>
+
+			<div class="card">
+				<h2>Saul goodman takes the lead!</h2>
+				<h5>image of the month epic takover - 29/9/2022</h5>
+				<img src="image.jfif" style="height:500px;width:600px;">
+				<p>saul goodman takes the lead for image of the month shortly after gigachad and peppa pig</p>
+				<p>saul goodman has recently been catching up to all the famed images, after gigachad takes the throne after peppa pig and 
+				is once tought to be unbeatable, sadly gigachad has not bee featured too much just collecting dust.
+				on the other hand, saul goodman has been racking up hype and i dont know if people organised this stuff but sure they do be voting and downloading saul.
+				</p>				
+			</div>
+
+
+	</body>
+
+</html>
+ 

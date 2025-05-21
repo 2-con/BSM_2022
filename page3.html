@@ -1,0 +1,391 @@
+<!DOCTYPE Html>
+<html>
+	<head>
+		<style>
+
+			h1{
+				font-size:50px;
+			}
+
+			h1{
+				font-family: Arial, Helvetica, sans-serif;
+			}
+
+			p{
+				font-size:  20px;
+			}
+
+			p{
+				font-family: Arial, Helvetica, sans-serif;
+			}
+
+			img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			div.center {
+				text-align: center;
+	
+			}
+
+			div.left {
+				text-align: left;
+
+			}
+
+			div.right {
+				text-align: right;
+
+			}
+
+			div.justify {
+				text-align: justify;
+
+			}
+			
+			ul.circle {
+				list-style-type: circle;
+			}
+
+			ul.square {
+				list-style-type: square;
+			}
+
+			ol.roman {
+				list-style-type: upper-roman;
+			}
+
+			ol.alphabet {
+				list-style-type: lower-alpha;
+			}
+
+			ul.number {
+				list-style-type: number;
+			}
+
+			div.pad {
+				margin: 40px;
+				padding: 1%;
+				background-color: #FF8330;
+				border: 3px solid black;
+			}
+			
+			div.gallery {
+				margin: 5px;
+				border: 1px solid #ccc;
+				float: left;
+				width: 70%;
+				
+			}
+
+			div.gallery:hover {
+				border: 5px solid #777;
+			}
+
+			div.gallery img {
+				width: 70%;
+				height: auto;
+			}
+
+			div.desc {
+				padding: 15px;
+				text-align: center;
+			}
+
+			.button {
+ 				background-color: #4CAF50;
+ 				border: none;
+  				color: white;
+  				padding: 5px 15px;
+				text-align: center;
+				text-decoration: none;
+ 				display: inline-block;
+  				font-size: 16px;
+  				margin: 4px 2px;
+  				cursor: pointer;
+			}
+			
+		.big_button {
+ 				background-color: coral;
+ 				border: none;
+  				color: white;
+  				padding: 25px 20px;
+				text-align: center;
+				text-decoration: none;
+ 				display: inline-block;
+  				font-size: 20px;
+  				margin: 4px 2px;
+  				cursor: pointer;
+				border-radius: 9px;
+			}
+
+			div.gallery {
+  				margin: 5px;
+ 				border: 1px solid #ccc;
+  				float: center;
+  				width: 250px;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+				border-radius: 9px;
+			}
+
+			div.gallery:hover {
+  				border: 1px solid black;
+			}
+
+			div.gallery img {
+  				width: 100%;
+  				height: auto;
+				border-radius: 9px;
+			}
+
+			div.desc {
+  				padding: 15px;
+  				text-align: center;
+  				background-color: #333333;
+  				color : #ffffff;
+				border-radius: 9px;
+			}
+
+			ul {
+				position: -webkit-sticky;
+  				position: sticky;
+  				top: 0;
+  				list-style-type: none;
+  				margin: 0;
+  				padding: 0;
+  				overflow: hidden;
+  				background-color: #303030;
+				border-radius: 15px;
+			}
+
+			li {
+  				float: left;
+				border-right:1px solid #ffffff;
+			}
+
+			li:last-child {
+  				border-right: none;
+			}
+
+			li a {
+  				display: block;
+  				color: white;
+  				text-align: center;
+  				padding: 14px 16px;
+  				text-decoration: none;
+			}
+
+			li a:hover:not(.active) {
+  				background-color: #525252;
+			}
+
+			.active {
+  				background-color: #333333;
+			}
+			.header {
+  				background-color: #f1f1f1;
+  				padding: 20px;
+ 				text-align: center;
+			}
+
+			.card {
+  				background-color: #919191;
+  				padding: 5px;
+  				margin-top: 20px;
+				margin: 10px;
+				border-radius: 14px;
+			}
+
+			.card1 {
+  				background-color: white;
+  				padding: 20px;
+  				margin-top: 20px;
+				margin: 30px;
+				border-radius: 9px;
+			}
+
+			.footer {
+  				background-color: #f1f1f1;
+  				padding: 10px;
+  				text-align: center;
+			}
+
+			.tooltip {
+ 				 position: relative;
+ 				 display: inline-block;
+ 				 border-bottom: 1px dotted black;
+			}
+
+			.tooltip .tooltiptext {
+  				visibility: hidden;
+  				width: 120px;
+				background-color: black;
+  				color: #fff;
+  				text-align: center;
+				border-radius: 6px;
+  				padding: 5px 0;
+  
+  			position: absolute;
+  				z-index: 1;
+  				top: 100%;
+  				left: 50%;
+  				margin-left: -60px;
+			}
+
+			.tooltip:hover .tooltiptext {
+  				visibility: visible;
+			}
+
+			.active {
+  				background-color: #04AA6D;
+			}
+		</style>
+
+		<title> space-image gallery</title>
+
+		</head>	
+
+ 
+
+			<body bgcolor="#cccccc">
+			
+				<div class="header"> <h1> outer space </h1>
+					<p1> worlds no.1 gallery website </p1> </div>
+
+				<ul>
+					<li><a href="file:///C:/Users/User/OneDrive/Desktop/coding%20thing/index.html">Home</a></li>
+					<li><a href="file:///C:/Users/User/OneDrive/Desktop/coding%20thing/video.html"> video gallery </a></li>
+				   <li><a href="mailto:mulyadia@britishschoolmuscat.com">submit image</a></li>
+				   <li style="float:right"><a class="active" href="file:///C:/Users/User/OneDrive/Desktop/coding%20thing/page5.html">about us</a></li>
+				   <li><a href="file:///C:/Users/User/OneDrive/Desktop/coding%20thing/news.html"> news </a></li>
+				</ul>
+
+			<div class="card1">
+				<div class="center">
+					<div class="center"><a href="file:///C:/Users/User/OneDrive/Desktop/coding%20thing/images.html"><button class="big_button"> back to random gallery </button></a></div>
+					<h2> space gallery </h2><br>
+					<p5> just some space images, images may be subjected to copyright. </p5><br>
+					<p6> this section is for space images i.e hubble, nasa, esa and all thoose stuff. </p6>
+				</div>
+			</div>
+			
+		<div class="card1">
+			<div class="center">
+					<div class="card">
+						<h1>top images</h1>
+					</div>
+				</div>
+				<div class="null">
+			<div class="gallery">
+  				<a target="_blank" href="europa.jpg">
+    				<img src="europa.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> a picture of <br> europa </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="saturn.jpg">
+    				<img src="saturn.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> saturn <br> - </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="dart.jpg">
+    				<img src="dart.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> the last picture taken before the dart satelite crashed </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="jupiter.jpg">
+    				<img src="jupiter.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> jupiter from the james webb telescope </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="saturn2.jpg">
+    				<img src="saturn2.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> saturn from the james webb telescope </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="moon2.jpg">
+    				<img src="moon2.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> the dark side of the <br> moon </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="moon.jpg">
+    				<img src="moon.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> moon <br> - </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="galaxy.jpg">
+    				<img src="galaxy.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> andromeda galaxy and other stuff very cool </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="dead.jpg">
+    				<img src="dead.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> reminants of a <br> dead star </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="ring.jpg">
+    				<img src="ring.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> einstein ring of a blue galaxy captured </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="crab.jpg">
+    				<img src="crab.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> southern crab nebula region photographed </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="r.jpg">
+    				<img src="r.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> bizzare rings in space caught by jmes webb </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="w.jpg">
+    				<img src="w.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> james webb telescope got released! </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="planet.jpg">
+    				<img src="planet.jpg" alt=" # " width="100"height="100">
+  				</a>
+  				<div class="desc"> cool space art of a exoplanet </div>
+			</div>
+
+			<div class="gallery">
+  				<a target="_blank" href="jupiter2.jpg">
+    				<img src="jupiter2.jpg" alt=" # " width="100"height="100">
+  				</a>
+  			<div class="desc"> jupiter image via the james webb </div>
+			</div>
+
+			</div>
+		</div>
+	</body>
+
+</html>
+ 
